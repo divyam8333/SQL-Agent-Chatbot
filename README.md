@@ -24,7 +24,7 @@ A powerful conversational AI chatbot designed to transform natural language ques
 ## ⚙️ System Architecture
 
 1. **LangChain SQL Agent** with OpenAI LLM (GPT-4o).
-2. **MySQL Database** (`oedec_hrms_db`) with employee-related tables like:
+2. **MySQL Database** (`database_name`) with employee-related tables like:
    - `grading_employee`
    - `grading_attendance`
    - `grading_timetracking`
@@ -49,7 +49,7 @@ A powerful conversational AI chatbot designed to transform natural language ques
    ```python
    mysql_user = "root"
    mysql_password = "your_password"
-   mysql_db_name = "oedec_hrms_db"
+   mysql_db_name = "database_name"
    ```
 3. **Insert your OpenAI API key**:
    ```python
