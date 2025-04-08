@@ -24,10 +24,7 @@ A powerful conversational AI chatbot designed to transform natural language ques
 ## ⚙️ System Architecture
 
 1. **LangChain SQL Agent** with OpenAI LLM (GPT-4o).
-2. **MySQL Database** (`database_name`) with employee-related tables like:
-   - `grading_employee`
-   - `grading_attendance`
-   - `grading_timetracking`
+2. **MySQL Database** (`database_name`) with employee-related tables.
 3. **SQLDatabaseToolkit** used for query generation.
 4. **Custom Prompt Template** guides the AI assistant to:
    - Answer queries.
@@ -38,7 +35,7 @@ A powerful conversational AI chatbot designed to transform natural language ques
 | Functionality | Description |
 |---------------|-------------|
 | Employee Info | `What is the total number of employees in each department?` |
-| Utilization   | `Show me the average utilization for the month.` |
+| Utilization   | `Show me the utilization of Ram from last 4 weeks.` |
 | Charts        | Automatically plots graphs (e.g., pie chart for department-wise distribution) |
 | Chat Memory   | Retains recent conversation context using `ConversationBufferMemory` |
 
