@@ -48,11 +48,23 @@ A powerful conversational AI chatbot designed to transform natural language ques
    mysql_password = "your_password"
    mysql_db_name = "database_name"
    ```
-3. **Insert your OpenAI API key**:
+3. **Insert your OpenAI API key - Paid**:
    ```python
    llm = ChatOpenAI(model="gpt-4o", openai_api_key="your_key")
    ```
-4. **Run cells sequentially** and interact with the chatbot using plain English queries.
+   **or**
+
+   **Insert your GROQ API key - Free**:
+   ```python
+   os.environ["GROQ_API_KEY"] = "your_key"
+   llm = ChatGroq(
+       model="llama3-70b-8192",
+       temperature=0,
+       max_tokens=1024,
+   )
+   ```
+   
+5. **Run cells sequentially** and interact with the chatbot using plain English queries.
 
 ## 📷 Sample Use Cases
 
